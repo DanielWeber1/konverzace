@@ -1,6 +1,5 @@
 body {
   font-family: Arial, sans-serif;
-  
 }
 
 .quiz{
@@ -9,10 +8,24 @@ body {
   align-items: center;
 }
 
+.pisnicka{
+  border-style: solid;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 20px;
+}
+
 input {
   width: 200px;
   height: 50px;
   margin-bottom: 10px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 15px;
 }
 
 button {
@@ -21,6 +34,8 @@ button {
   color: #fff;
   border: none;
   cursor: pointer;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
 
 button:hover {
