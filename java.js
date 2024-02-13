@@ -155,6 +155,41 @@ function handleClick(event) {
     userSong = document.getElementById("userSong18").value.toLowerCase();
     userSinger = document.getElementById("userSinger18").value.toLowerCase();
     porovnejVstupy();
+    
+  }
+  if (idTlacitka == "tlacitko19")
+  {
+    song = "i wonder";
+    singer = "kanye west"
+    userSong = document.getElementById("userSong19").value.toLowerCase();
+    userSinger = document.getElementById("userSinger19").value.toLowerCase();
+    porovnejVstupy();
+    
+  }
+  if (idTlacitka == "tlacitko20")
+  {
+    song = "shut up and dance";
+    singer = "walk the moon"
+    userSong = document.getElementById("userSong20").value.toLowerCase();
+    userSinger = document.getElementById("userSinger20").value.toLowerCase();
+    porovnejVstupy();
+   
+  }
+  if (idTlacitka == "tlacitko21")
+  {
+    song = "whistle";
+    singer = "flo rida"
+    userSong = document.getElementById("userSong21").value.toLowerCase();
+    userSinger = document.getElementById("userSinger21").value.toLowerCase();
+    porovnejVstupy();
+  }
+  if (idTlacitka == "tlacitko22")
+  {
+    song = "cheri cheri lady";
+    singer = "modern talking"
+    userSong = document.getElementById("userSong22").value.toLowerCase();
+    userSinger = document.getElementById("userSinger22").value.toLowerCase();
+    porovnejVstupy();
     vypisBody();
   }
 }
@@ -180,6 +215,10 @@ document.getElementById("tlacitko17").addEventListener("click", handleClick);
 document.getElementById("tlacitko18").addEventListener("click", handleClick);
 document.getElementById("tlacitko19").addEventListener("click", handleClick);
 document.getElementById("tlacitko20").addEventListener("click", handleClick);
+document.getElementById("tlacitko21").addEventListener("click", handleClick);
+document.getElementById("tlacitko22").addEventListener("click", handleClick);
+
+
 
 
 
