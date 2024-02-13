@@ -147,12 +147,11 @@ function handleClick(event) {
     userSong = document.getElementById("userSong17").value.toLowerCase();
     userSinger = document.getElementById("userSinger17").value.toLowerCase();
     porovnejVstupy();
-    vypisBody();
   }
   if (idTlacitka == "tlacitko18")
   {
-    song = "congratulations";
-    singer = "post malone"
+    song = "starships";
+    singer = "nicki minaj"
     userSong = document.getElementById("userSong18").value.toLowerCase();
     userSinger = document.getElementById("userSinger18").value.toLowerCase();
     porovnejVstupy();
