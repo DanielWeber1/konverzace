@@ -20,7 +20,7 @@ function handleClick(event) {
     userSinger = document.getElementById("userSinger1").value.toLowerCase();
     porovnejVstupy();
   }
-  if (idTlacitka == "tlacitko2")
+  /*if (idTlacitka == "tlacitko2")
   {
     song = "dancing in the moonlight";
     singer = "toploader"
@@ -35,7 +35,7 @@ function handleClick(event) {
     userSong = document.getElementById("userSong3").value.toLowerCase();
     userSinger = document.getElementById("userSinger3").value.toLowerCase();
     porovnejVstupy();
-  }
+  }*/
   if (idTlacitka == "tlacitko4")
   {
     song = "another one bites the dust";
@@ -147,6 +147,7 @@ function handleClick(event) {
     userSong = document.getElementById("userSong17").value.toLowerCase();
     userSinger = document.getElementById("userSinger17").value.toLowerCase();
     porovnejVstupy();
+    vypisBody();
   }
   if (idTlacitka == "tlacitko18")
   {
@@ -155,13 +156,14 @@ function handleClick(event) {
     userSong = document.getElementById("userSong18").value.toLowerCase();
     userSinger = document.getElementById("userSinger18").value.toLowerCase();
     porovnejVstupy();
+    vypisBody();
   }
 }
 
 // Přiřazení posluchačů událostí pro každé tlačítko
 document.getElementById("tlacitko1").addEventListener("click", handleClick);
-document.getElementById("tlacitko2").addEventListener("click", handleClick);
-document.getElementById("tlacitko3").addEventListener("click", handleClick);
+/*document.getElementById("tlacitko2").addEventListener("click", handleClick);
+document.getElementById("tlacitko3").addEventListener("click", handleClick);*/
 document.getElementById("tlacitko4").addEventListener("click", handleClick);
 document.getElementById("tlacitko5").addEventListener("click", handleClick);
 document.getElementById("tlacitko6").addEventListener("click", handleClick);
@@ -187,29 +189,34 @@ function porovnejVstupy()
   if (userSong.trim() == song && userSinger.trim() != singer)
   {
     pricti1Bod();
-    document.getElementById("vysledek").textContent = "Písnička je správně. 1 Bod přidán!";
   }
 
   //+2 body
   if (userSong.trim() != song && userSinger.trim() == singer)
   {
     pricti2Body();
-    document.getElementById("vysledek").textContent = "Zpěvák je správně. 2 Body přidány!";
   }
 
   //+3 body
   if (userSong.trim() == song && userSinger.trim() == singer) 
   {
     pricti3Body();
-    document.getElementById("vysledek").textContent = "Vše je správně. 3 Body přidány!";
   } 
   if (userSong.trim() != song && userSinger.trim() != singer) 
   {
-    document.getElementById("vysledek").textContent = "Vše špatně";
+    
   }
-  document.getElementById("porovnani").textContent = "vše proběhlo";
 }
 
+function vypisBody()
+{
+  document.getElementById("vysledek").textContent = body + " bodů";
+}
+
+function disableButton(button) {
+  button.disabled = true; // Deaktivace tlačítka
+  button.innerText = "Clicked"; // Změna textu tlačítka (volitelné)
+}
 
 
 function pricti1Bod()
