@@ -190,8 +190,41 @@ function handleClick(event) {
     userSong = document.getElementById("userSong22").value.toLowerCase();
     userSinger = document.getElementById("userSinger22").value.toLowerCase();
     porovnejVstupy();
+  }
+  if (idTlacitka == "tlacitko23")
+  {
+    song = "good 4 you";
+    singer = "olivia rodrigo"
+    userSong = document.getElementById("userSong23").value.toLowerCase();
+    userSinger = document.getElementById("userSinger23").value.toLowerCase();
+    porovnejVstupy();
+  }
+  if (idTlacitka == "tlacitko24")
+  {
+    song = "bad habits";
+    singer = "ed sheeran"
+    userSong = document.getElementById("userSong24").value.toLowerCase();
+    userSinger = document.getElementById("userSinger24").value.toLowerCase();
+    porovnejVstupy();
+  }
+  if (idTlacitka == "tlacitko25")
+  {
+    song = "beat it";
+    singer = "michael jackson"
+    userSong = document.getElementById("userSong25").value.toLowerCase();
+    userSinger = document.getElementById("userSinger25").value.toLowerCase();
+    porovnejVstupy();
+  }
+  if (idTlacitka == "tlacitko26")
+  {
+    song = "understand";
+    singer = "boywithuke"
+    userSong = document.getElementById("userSong26").value.toLowerCase();
+    userSinger = document.getElementById("userSinger26").value.toLowerCase();
+    porovnejVstupy();
     vypisBody();
   }
+  
 }
 
 // Přiřazení posluchačů událostí pro každé tlačítko
@@ -217,6 +250,13 @@ document.getElementById("tlacitko19").addEventListener("click", handleClick);
 document.getElementById("tlacitko20").addEventListener("click", handleClick);
 document.getElementById("tlacitko21").addEventListener("click", handleClick);
 document.getElementById("tlacitko22").addEventListener("click", handleClick);
+document.getElementById("tlacitko23").addEventListener("click", handleClick);
+document.getElementById("tlacitko24").addEventListener("click", handleClick);
+document.getElementById("tlacitko25").addEventListener("click", handleClick);
+document.getElementById("tlacitko26").addEventListener("click", handleClick);
+document.getElementById("tlacitko27").addEventListener("click", handleClick);
+
+
 
 
 
