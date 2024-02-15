@@ -193,7 +193,7 @@ function handleClick(event) {
   }
   if (idTlacitka == "tlacitko23")
   {
-    song = "good 4 you";
+    song = "deja vu";
     singer = "olivia rodrigo"
     userSong = document.getElementById("userSong23").value.toLowerCase();
     userSinger = document.getElementById("userSinger23").value.toLowerCase();
